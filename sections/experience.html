@@ -1,133 +1,113 @@
-<section class="py-5" data-aos="fade-up">
+<!-- sections/experience.html -->
+<section class="experience-section" data-aos="fade-up">
   <div class="container">
-    <h2 class="text-center text-primary mb-5">Experience</h2>
-    <p class="lead text-center mb-5" data-aos="fade-up" style="max-width: 900px; margin: 0 auto;">
-      Software engineer with production ownership across backend APIs, React Native product surfaces, cloud deployments, enterprise decisioning systems, and applied AI research. Current work at <strong>OurFreedom.ai</strong> centers on <strong>NestJS, MongoDB, React Native/Expo, privacy controls, content moderation, voice communication, and CI/CD</strong>. Prior experience includes Verizon-scale Pega Decisioning systems at <strong>Infosys</strong>, graduate AI/NLP research at <strong>UMass Lowell</strong>, and automation tooling for academic operations.
-    </p>
-
+    <div class="section-heading center">
+      <span class="eyebrow">Experience</span>
+      <h2 class="section-title">Production ownership, research depth, enterprise scale</h2>
+      <p class="section-lede">
+        Current work at OurFreedom.ai anchors the portfolio in real shipped product engineering, with prior AI research
+        and Verizon-scale decisioning experience adding depth around data, reliability, and systems thinking.
+      </p>
+    </div>
 
     <div class="timeline">
-
-      <!-- OurFreedom.ai Full-Stack Engineer -->
-      <div class="timeline-item" data-aos="fade-right" data-aos-delay="50">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Full-Stack Engineer</h5>
-            <h6 class="card-subtitle mb-2 text-muted">OurFreedom.ai | Remote, New York</h6>
-            <p class="card-text"><strong>Jan 2025 - Present</strong></p>
-            <ul class="card-text">
-              <li>Built a <strong>social graph system</strong> for follow, block, and private profile workflows using <strong>NestJS, MongoDB, TypeScript, and React Native/Expo</strong>.</li>
-              <li>Designed privacy-aware backend services across Profiles, Blocks, and Follows modules with type-safe API responses.</li>
-              <li>Integrated <strong>Twilio Voice SDK</strong> for real-time communication, built token endpoints with JWT auth, and fixed race conditions in the voice provider.</li>
-              <li>Created account management features and optimized search using <strong>MongoDB aggregation</strong>.</li>
-              <li>Built content moderation endpoints with validation and admin logging for production social workflows.</li>
-              <li>Conduct code reviews, manage deployments and CI/CD with <strong>GitHub Actions and Vercel</strong>, and lead PR reviews across the team.</li>
-              <li>Reduced profile loading time by <strong>60%</strong> through optimized data fetching and cut support tickets by <strong>95%</strong> with automated profile management.</li>
-              <li>Delivered end-to-end features from design to production in <strong>3-week sprints</strong>.</li>
-            </ul>
+      <article class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+        <div class="timeline-card current">
+          <div class="timeline-top">
+            <div>
+              <h3>Full-Stack Engineer</h3>
+              <p class="company">OurFreedom.ai | Remote, New York</p>
+            </div>
+            <span class="timeline-date">Jan 2025 - Present</span>
           </div>
+          <ul class="impact-list">
+            <li>Built social graph, profile privacy, content moderation, and account-management workflows with NestJS, MongoDB, TypeScript, and React Native/Expo.</li>
+            <li>Integrated Twilio Voice SDK, token endpoints, JWT auth, validation, admin logging, and production release workflows.</li>
+            <li>Reduced profile loading time by 60%, cut support tickets by 95%, and reviewed/merged 50+ production PRs.</li>
+          </ul>
         </div>
-      </div>
+      </article>
 
-
-
-      <!-- Graduate Research Assistant -->
-      <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Graduate Research Assistant, AI & Healthcare</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Department of Computer Science | University of Massachusetts Lowell, USA</h6>
-            <p class="card-text"><strong>Jan 2024 - August 2025</strong></p>
-            <ul class="card-text">
-              <li>Built an LLM-based pipeline to predict <strong>15 Social Determinants of Health (SDoH)</strong> categories from <strong>2,636 opioid-related clinical notes</strong>.</li>
-              <li>Fine-tuned <strong>Clinical Longformer</strong>, <strong>DeepSeek-R1</strong>, and <strong>LLaMA 3.2</strong> models with specialized ordinal regression techniques.</li>
-              <li>Hit <strong>92.6% accuracy</strong> with <strong>MAE of 0.235</strong>, and added entropy-based active learning plus <strong>token-level explainability</strong> using Captum.</li>
-              <li>Worked with clinicians to validate predictions and reached 0.72 inter-annotator agreement.</li>
-              <li>Built pipelines for preprocessing, quality checks, and benchmarking using <strong>PyTorch, Hugging Face, and CUDA</strong>.</li>
-              <li>Co-authored research papers, helped with grant proposals, and presented at AI and Healthcare conferences.</li>
-            </ul>
+      <article class="timeline-item" data-aos="fade-up" data-aos-delay="90">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Graduate Research Assistant, AI &amp; Healthcare</h3>
+              <p class="company">Department of Computer Science | UMass Lowell</p>
+            </div>
+            <span class="timeline-date">Jan 2024 - Aug 2025</span>
           </div>
+          <ul class="impact-list">
+            <li>Built LLM and transformer pipelines to predict 15 SDoH categories from 2,636 opioid-related clinical notes.</li>
+            <li>Fine-tuned Clinical Longformer, DeepSeek-R1, and LLaMA models with ordinal regression and active learning.</li>
+            <li>Reached 92.6% accuracy with 0.235 MAE and added token-level explainability with clinician validation.</li>
+          </ul>
         </div>
-      </div>
+      </article>
 
-
-      <!-- Graduate Assistant -->
-      <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Graduate Assistant, Software Development & Data Automation</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Dean's Office | Manning School of Business, UMass Lowell, USA</h6>
-            <p class="card-text"><strong>May 2024 - August 2025</strong></p>
-            <ul class="card-text">
-              <li>Fine-tuned <strong>BERT models</strong> for regression and <strong>GPT models</strong> to automate academic advising workflows.</li>
-              <li>Built and deployed a <strong>GPT-powered advising chatbot</strong> using student data and custom Tableau dashboards.</li>
-              <li>Automated grading with <strong>Dockerized Python scripts</strong> on Linux integrated with LMS workflows.</li>
-              <li>Built a <strong>PySide6</strong> GUI for internal reporting and analytics tools.</li>
-              <li>Led web and data ops for <strong>Manning Industry Days</strong>, coordinating 100+ speakers, building dashboards in <strong>Tableau Prep</strong>, and automating reports with Google Apps Script.</li>
-              <li>Created an <strong>image-enhancement tool</strong> for speaker photos using <strong>Real-ESRGAN</strong>.</li>
-              <li>Set up <strong>web scraping and browser automation</strong> with Selenium and improved alumni data workflows using an <strong>instruction-tuned LLM</strong>.</li>
-            </ul>
+      <article class="timeline-item" data-aos="fade-up" data-aos-delay="130">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Graduate Assistant, Software Development &amp; Data Automation</h3>
+              <p class="company">Manning School of Business | UMass Lowell</p>
+            </div>
+            <span class="timeline-date">May 2024 - Aug 2025</span>
           </div>
+          <ul class="impact-list">
+            <li>Built GPT-powered advising workflows, Tableau dashboards, Dockerized grading automation, and internal Python GUI tools.</li>
+            <li>Automated reporting, browser scraping, speaker-data workflows, and event analytics for 100+ speaker operations.</li>
+          </ul>
         </div>
-      </div>
+      </article>
 
-
-      <!-- Technology Analyst -->
-      <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Senior Software Engineer, Pega Decisioning (Module Lead)</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Infosys Ltd. | Client: Verizon, Hyderabad, India</h6>
-            <p class="card-text"><strong>Aug 2022 - Aug 2023</strong></p>
-            <ul class="card-text">
-              <li>Led the <strong>Publish Module</strong> for Verizon's <strong>Pega Decisioning Hub</strong>, covering offer creation, validation, and deployment.</li>
-              <li>Built REST integrations between a <strong>ReactJS frontend</strong> and Pega backend services.</li>
-              <li>Created <strong>Kibana utilities</strong> to unify API logs and speed production debugging.</li>
-              <li>Boosted system throughput by <strong>20%</strong> by optimizing queue processors and improving error handling.</li>
-              <li>Resolved a major production outage after a version upgrade and added safeguards to prevent recurrence.</li>
-              <li>Worked closely with Verizon's senior architects on system design and reliability.</li>
-              <li>Mentored a <strong>4-person team</strong> across time zones and coordinated Agile sprints.</li>
-            </ul>
+      <article class="timeline-item" data-aos="fade-up" data-aos-delay="170">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Senior Software Engineer, Pega Decisioning</h3>
+              <p class="company">Infosys Ltd. | Client: Verizon</p>
+            </div>
+            <span class="timeline-date">Aug 2022 - Aug 2023</span>
           </div>
+          <ul class="impact-list">
+            <li>Led Publish Module workflows for Verizon's Pega Decisioning Hub across offer creation, validation, and deployment.</li>
+            <li>Built React-to-Pega REST integrations, Kibana debugging utilities, and queue processor improvements that boosted throughput by 20%.</li>
+            <li>Mentored a 4-person team and coordinated outage recovery plus safeguards after a major production incident.</li>
+          </ul>
         </div>
-      </div>
+      </article>
 
-
-      <!-- Associate Business Analyst -->
-      <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Software Engineer, Pega Developer</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Infosys Ltd. | Client: Verizon, Hyderabad, India</h6>
-            <p class="card-text"><strong>Dec 2020 - Aug 2022</strong></p>
-            <ul class="card-text">
-              <li>Built and optimized case types, decision tables, rules, and REST/SOAP components in <strong>Pega 8.x</strong>.</li>
-              <li>Automated workflows with agents, queue processors, and schedulers, improving deployment stability by <strong>30%</strong>.</li>
-              <li>Built utilities for <strong>Oracle SQL sync</strong> and API monitoring with <strong>Kibana dashboards</strong>.</li>
-              <li>Resolved cross-module bugs and critical production issues across offer creation and decisioning workflows.</li>
-              <li>Played a key role building the <strong>Publish Module</strong> used by multiple teams.</li>
-            </ul>
+      <article class="timeline-item" data-aos="fade-up" data-aos-delay="210">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Software Engineer, Pega Developer</h3>
+              <p class="company">Infosys Ltd. | Client: Verizon</p>
+            </div>
+            <span class="timeline-date">Dec 2020 - Aug 2022</span>
           </div>
+          <ul class="impact-list">
+            <li>Built case types, decision tables, rules, REST/SOAP components, agents, schedulers, and Oracle SQL sync utilities.</li>
+            <li>Improved deployment stability by 30% and resolved cross-module production issues across offer decisioning workflows.</li>
+          </ul>
         </div>
-      </div>
+      </article>
 
-
-      <!-- Early Career & Internships -->
-      <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Undergraduate Research & Early Work</h5>
-            <h6 class="card-subtitle mb-2 text-muted">K L University | Vijayawada, India</h6>
-            <p class="card-text"><strong>2019 - 2020</strong></p>
-            <ul class="card-text">
-              <li>Worked on <strong>home automation</strong> with IoT microcontrollers and published a paper on smart-home systems.</li>
-              <li>Built early experience with embedded systems, IoT protocols, and cloud interfaces.</li>
-            </ul>
+      <article class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+        <div class="timeline-card">
+          <div class="timeline-top">
+            <div>
+              <h3>Undergraduate Research &amp; Early Work</h3>
+              <p class="company">K L University | Vijayawada, India</p>
+            </div>
+            <span class="timeline-date">2019 - 2020</span>
           </div>
+          <ul class="impact-list">
+            <li>Worked on home automation with IoT microcontrollers and published research on smart-home systems.</li>
+          </ul>
         </div>
-      </div>
-
-
+      </article>
     </div>
   </div>
 </section>

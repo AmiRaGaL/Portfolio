@@ -1,28 +1,56 @@
 <!-- sections/contact.html -->
-<section class="py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="text-center text-primary mb-4">Contact Me</h2>
-      <form id="form" class="mx-auto" style="max-width: 600px;">
+<section class="contact-section section-band" data-aos="fade-up">
+  <div class="container">
+    <div class="section-heading center">
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title">Let’s talk about backend, full-stack, or AI engineering roles</h2>
+      <p class="section-lede">
+        I am open to software engineering opportunities where production ownership, product judgment, and system quality matter.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <aside class="contact-card glass-card">
+        <h3>Direct links</h3>
+        <p class="text-muted">A quick route to the channels hiring teams usually need.</p>
+        <div class="contact-methods">
+          <a class="contact-method" href="mailto:devasai1259@gmail.com">
+            <span>Email</span>
+            devasai1259@gmail.com
+          </a>
+          <a class="contact-method" href="https://github.com/AmiRaGaL" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            github.com/AmiRaGaL
+          </a>
+          <a class="contact-method" href="https://www.linkedin.com/in/deva-sai-kumar-bheesetti-34380812b" target="_blank" rel="noreferrer">
+            <span>LinkedIn</span>
+            Deva Sai Kumar Bheesetti
+          </a>
+        </div>
+      </aside>
+
+      <form id="form" class="contact-form-card glass-card">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" class="form-control" name="name" id="name" required />
+          <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" required>
         </div>
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+          <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" class="form-control" name="email" id="email" required />
-        </div>
-  
-        <!-- Hidden Fields with Default Values -->
-        <input type="hidden" name="title" value="Contact from Portfolio Site" />
-        <input type="hidden" name="time" id="default-time" />
-  
-        <input type="submit" id="button" value="Send Email" class="btn btn-primary btn-block" />
-        <input type="text" name="company" id="company" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <input type="hidden" name="title" value="Contact from Portfolio Site">
+        <input type="hidden" name="time" id="default-time">
+        <input type="text" name="company" id="company" style="display:none" tabindex="-1" autocomplete="off">
+
+        <input type="submit" id="button" value="Send Email" class="btn btn-primary btn-block">
       </form>
     </div>
-  </section>
+  </div>
+</section>
