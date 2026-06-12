@@ -306,12 +306,7 @@ document.addEventListener("DOMContentLoaded", () => {
   bindChatOnce(document);
   initFloatingChatWidget();
 
-  const mo = new MutationObserver(() => {
-    if (!bound) bindChatOnce(document);
-  });
-  mo.observe(document.documentElement, { childList: true, subtree: true });
-
-  window.addEventListener("sections:loaded", () => {
+  document.addEventListener("section:loaded", () => {
     ensureScrollArrow();
     if (!bound) bindChatOnce(document);
   });

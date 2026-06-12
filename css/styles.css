@@ -69,7 +69,7 @@ a:hover { color: var(--secondary-color); }
 /* =============================
    Hero Section (Home)
 ============================= */
-#home.hero {
+#home .hero {
   background: linear-gradient(135deg, var(--hero-start) 0%, var(--hero-end) 100%);
   color: var(--text-color);
   min-height: 100vh;
@@ -79,14 +79,14 @@ a:hover { color: var(--secondary-color); }
   transition: background .5s ease, color .3s ease;
 }
 
-#home.hero h1 {
+#home .hero h1 {
   font-size: clamp(2rem, 4vw, 3.25rem);
   font-weight: 700;
   margin-bottom: .75rem;
   color: var(--text-color);
 }
 
-#home.hero p {
+#home .hero p {
   font-size: 1.15rem;
   max-width: 700px;
   margin: .5rem auto 1.5rem;
@@ -94,7 +94,7 @@ a:hover { color: var(--secondary-color); }
   color: var(--muted-color);
 }
 
-#home.hero .avatar {
+#home .hero .avatar {
   width: 520px;
   height: 520px;
   object-fit: cover;
@@ -107,8 +107,8 @@ a:hover { color: var(--secondary-color); }
   box-shadow: var(--shadow);
   transition: transform .25s ease;
 }
-#home.hero .avatar:hover { transform: scale(1.03); }
-body.dark-theme #home.hero .avatar {
+#home .hero .avatar:hover { transform: scale(1.03); }
+body.dark-theme #home .hero .avatar {
   background-color: #1f1e1a;
   border-color: rgba(255,255,255,.1);
   mix-blend-mode: normal;
@@ -245,9 +245,14 @@ footer {
    Responsive
 ============================= */
 @media (max-width: 768px) {
-  #home.hero h1 { font-size: 2.25rem; }
-  #home.hero p { font-size: 1rem; }
-  #home.hero .avatar { width: 180px; height: 180px; }
+  #home .hero h1 { font-size: 2.25rem; }
+  #home .hero p { font-size: 1rem; }
+  #home .hero .avatar { width: 180px; height: 180px; }
+
+  #experience [data-aos="fade-right"],
+  #experience [data-aos="fade-left"] {
+    transform: none !important;
+  }
 }
 /* ===== Bootstrap primary/link overrides (kill the blue) ===== */
 

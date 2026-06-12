@@ -1,234 +1,205 @@
 <!-- sections/projects.html -->
-<section id="projects" class="py-5 bg-light" data-aos="fade-up">
+<section class="py-5 bg-light" data-aos="fade-up">
   <div class="container">
     <h2 class="text-center text-primary mb-5">Projects</h2>
     <div class="row">
-      <!-- SDoH Prediction using LLMs -->
       <div class="col-md-6 mb-4">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">
-              SDoH Prediction using LLMs (Thesis Project)
-            </h5>
+            <h5 class="card-title">TrustOps Platform</h5>
             <p class="card-text">
-              Built a robust pipeline for predicting 15 Social Determinants of
-              Health from long clinical texts using transformer-based
-              architectures such as Longformer, Deepseek-R1, and LLaMA 3.2.
+              Full-stack moderation operations platform for multi-tenant trust and safety workflows, built to show backend ownership, product thinking, and operational tooling.
             </p>
             <ul class="card-text">
-              <li>
-                Designed multi-output regression and ordinal classification
-                models for granular SDoH prediction.
-              </li>
-              <li>
-                Implemented a hybrid Huber-MSE loss function and fine-tuned
-                models using instruction-tuned datasets.
-              </li>
-              <li>
-                Applied active learning and uncertainty sampling strategies to
-                improve annotation efficiency and model performance.
-              </li>
-              <li>
-                Achieved 91.3% validation accuracy and 0.285 MAE; predictions
-                validated against clinician annotations.
-              </li>
+              <li>Implemented tenant-aware RBAC, JWT auth, moderation queues, workflow automation, and audit logs.</li>
+              <li>Built with NestJS, Next.js, PostgreSQL, Prisma, Docker, GitHub Actions, Vercel, Render, and Supabase.</li>
+              <li>Designed for reviewer operations, case traceability, and production-style deployment workflows.</li>
             </ul>
-            <a
-              href="https://www.proquest.com/docview/3257712907?sourcetype=Dissertations%20&%20Theses"
-              target="_blank"
-              class="btn btn-primary mt-3"
-              >View Thesis</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- Industry Days -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">
-              Industry Days – Manning School of Business
-            </h5>
-            <p class="card-text">
-              Led website and data operations for the flagship Industry Days
-              event, ensuring seamless data flow and analytics.
-            </p>
-            <ul class="card-text">
-              <li>
-                Created web content using Tridion SDL to match university
-                branding.
-              </li>
-              <li>
-                Automated dashboards with Tableau Prep and Google Sheets for
-                post-event insights.
-              </li>
-              <li>
-                Used Selenium to scrape speaker details and performed analytics
-                on Suitable App registration data.
-              </li>
-            </ul>
-            <a
-              href="https://www.uml.edu/msb/industry-days/"
-              target="_blank"
-              class="btn btn-primary mt-3"
-              >Visit Event Site</a
-            >
+            <a href="https://trustops-platform-web.vercel.app/" target="_blank" rel="noreferrer" class="btn btn-primary mt-3">View Live App</a>
+            <a href="https://github.com/AmiRaGaL/trustops-platform" target="_blank" rel="noreferrer" class="btn btn-secondary mt-3 ml-2">GitHub</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 mb-4">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">
-              Verizon Offer Management, Pega PRPC and Pega CDH
-            </h5>
+            <h5 class="card-title">VitaScan - AI-Powered Symptom Checker &amp; Health Assistant</h5>
             <p class="card-text">
-              Core module ownership for a large-scale Pega Decisioning platform
-              (Offer Management / NBA).
+              AI-powered health assistant across web and mobile, combining product UI, backend APIs, vector retrieval, and LLM-based health guidance.
             </p>
             <ul class="card-text">
-              <li>
-                End-to-end REST integrations between ReactJS UI and Pega
-                Decisioning Hub.
-              </li>
-              <li>
-                Agent-driven offer creation, validation, and migration; queue
-                processors for scale.
-              </li>
-              <li>
-                Kibana-based unified logging for OOTB and custom APIs; improved
-                incident response.
-              </li>
+              <li>Built with Next.js, React Native/Expo, NestJS, Supabase, PostgreSQL, pgvector, Vercel, Render, and Supabase.</li>
+              <li>Implemented RAG workflows using OpenAI/Gemini and LangChain for symptom context, citations, and follow-up guidance.</li>
+              <li>Used Supabase auth, row-level security, and cloud deployment workflows to support privacy-aware health features.</li>
+            </ul>
+            <a href="https://vitascan-web-rho.vercel.app/" target="_blank" rel="noreferrer" class="btn btn-primary mt-3">View Live App</a>
+            <a href="https://github.com/AmiRaGaL/vitascan" target="_blank" rel="noreferrer" class="btn btn-secondary mt-3 ml-2">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Support RAG Evaluator</h5>
+            <p class="card-text">
+              Full-stack RAG evaluation platform for testing retrieval quality, answer grounding, refusal behavior, and support-query traceability.
+            </p>
+            <ul class="card-text">
+              <li>Built document ingestion, pgvector retrieval, grounded answers with citations, query logs, and eval runs.</li>
+              <li>Implemented OpenAPI docs and deterministic CI-safe tests for reliable backend validation.</li>
+              <li>Used NestJS, Next.js, PostgreSQL, Prisma, Docker, GitHub Actions, Vercel, and Render.</li>
+            </ul>
+            <a href="https://support-rag-evaluator.vercel.app/" target="_blank" rel="noreferrer" class="btn btn-primary mt-3">View Live App</a>
+            <a href="https://github.com/AmiRaGaL/support-rag-evaluator" target="_blank" rel="noreferrer" class="btn btn-secondary mt-3 ml-2">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">SDoH Prediction using LLMs (Thesis Project)</h5>
+            <p class="card-text">
+              Graduate healthcare NLP research pipeline for predicting Social Determinants of Health severity from long opioid-related clinical notes.
+            </p>
+            <ul class="card-text">
+              <li>Modeled 15 SDoH categories with Clinical Longformer, DeepSeek-R1, LLaMA 3.2, and ordinal regression methods.</li>
+              <li>Applied active learning, uncertainty sampling, token-level explainability, and clinician validation workflows.</li>
+              <li>Achieved 91.3% validation accuracy and 0.285 MAE in thesis evaluation.</li>
+            </ul>
+            <a href="https://www.proquest.com/docview/3257712907?sourcetype=Dissertations%20&%20Theses" target="_blank" rel="noreferrer" class="btn btn-primary mt-3">View Thesis</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">OurFreedom.ai Social Platform - Production Case Study</h5>
+            <p class="card-text">
+              Non-public production work across backend APIs, React Native product surfaces, privacy controls, moderation, voice communication, and release workflows.
+            </p>
+            <ul class="card-text">
+              <li>Built social graph services for follows, blocks, private profiles, relationship cleanup, and type-safe API responses.</li>
+              <li>Shipped React Native/Expo screens, account management, MongoDB aggregation search, and Twilio voice integrations.</li>
+              <li>Supported deployment, CI/CD, PR reviews, content moderation endpoints, and production reliability work.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- vitascan -->
       <div class="col-md-6 mb-4">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">
-              VitaScan - AI-Powered Symptom Checker & Health Assistant
-            </h5>
+            <h5 class="card-title">Clinical Survival Analysis Dashboard</h5>
             <p class="card-text">
-              A full-stack health assistant app providing AI-driven symptom
-              assessment, triage recommendations, and personalized health
-              guidance across web and mobile platforms.
+              Healthcare analytics dashboard for exploring survival patterns, cohort attributes, and model outputs in a clinical research setting.
             </p>
             <ul class="card-text">
-              <li>
-                Built with Next.js (web) and React Native/Expo (mobile), backed
-                by NestJS and Supabase (PostgreSQL + pgvector).
-              </li>
-              <li>
-                AI-powered triage system using LLMs (OpenAI/Gemini) with RAG
-                from medical sources (CDC, WHO, NHS).
-              </li>
-              <li>
-                Intelligent chat assistant with context-aware follow-ups and
-                personalized recipe recommendations using vector similarity
-                search.
-              </li>
-              <li>
-                HIPAA-aligned data protection with row-level security (RLS)
-                policies in Supabase.
-              </li>
-              <li>
-                Deployed on Vercel (frontend), Render (API), and Supabase
-                (database/auth).
-              </li>
-            </ul>
-            <a
-              href="https://github.com/AmiRaGaL/vitascan"
-              target="_blank"
-              class="btn btn-primary mt-3"
-              >View on GitHub</a
-            >
-            <a
-              href="https://vitascan-web-rho.vercel.app/"
-              target="_blank"
-              class="btn btn-secondary mt-3 ms-2"
-              >View Live App</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- AI-Integrated Discord Bot -->
-      <div class="col-md-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">AI-Integrated Discord Bot</h5>
-            <p class="card-text">
-              Designed and deployed a custom bot with conversational
-              capabilities, role assignment, and contextual assistance.
-            </p>
-            <ul class="card-text">
-              <li>
-                Built using Node.js and Python with instruction fine-tuning and
-                RAG techniques.
-              </li>
-              <li>Integrated Groq API for LLM-powered interactions.</li>
+              <li>Prepared clinical datasets for exploratory analysis, feature review, and reproducible reporting.</li>
+              <li>Built visual workflows to help compare patient cohorts and survival-related signals.</li>
+              <li>Applied Python data tooling and dashboard design for research-facing analysis.</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Human Activity Recognition -->
       <div class="col-md-6 mb-4">
-        <div class="card">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Cancer Subtype Classification</h5>
+            <p class="card-text">
+              Machine learning project for classifying cancer subtypes from structured biomedical features and evaluating model performance.
+            </p>
+            <ul class="card-text">
+              <li>Built preprocessing, feature engineering, training, and evaluation workflows in Python.</li>
+              <li>Compared supervised models and tracked accuracy, precision, recall, and error patterns.</li>
+              <li>Focused on interpretable evaluation for biomedical classification use cases.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">Human Activity Recognition (HAR)</h5>
             <p class="card-text">
-              Developed a fall detection system using RGB-Pose activity data and
-              real-time alerting via AWS.
+              Fall detection system using RGB-pose activity data, pose extraction, sequence modeling, and AWS-based alerting.
             </p>
             <ul class="card-text">
-              <li>
-                Used datasets like HMDB51, UCF50 and KTH; extracted pose joints
-                using Mediapipe.
-              </li>
-              <li>Implemented ConvLSTM, LRCN, and pose-based DNN models.</li>
-              <li>Triggered email alerts using AWS IoT Core + SNS.</li>
+              <li>Used HMDB51, UCF50, and KTH datasets with Mediapipe pose-joint extraction.</li>
+              <li>Implemented ConvLSTM, LRCN, and pose-based DNN models for activity recognition.</li>
+              <li>Triggered email alerts through AWS IoT Core and SNS.</li>
             </ul>
-            <a
-              href="https://github.com/AmiRaGaL/Human-Activity-Recognition-using-RaspberryPI.git"
-              target="_blank"
-              class="btn btn-primary mt-3"
-              >View on GitHub</a
-            >
+            <a href="https://github.com/AmiRaGaL/Human-Activity-Recognition-using-RaspberryPI.git" target="_blank" rel="noreferrer" class="btn btn-primary mt-3">GitHub</a>
           </div>
         </div>
       </div>
 
-      <!-- Twitter Sentiment Analysis -->
       <div class="col-md-6 mb-4">
-        <div class="card">
+        <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">Twitter Sentiment Analysis (TSA)</h5>
+            <h5 class="card-title">Verizon Offer Management - Pega Decisioning</h5>
+            <p class="card-text">
+              Enterprise decisioning platform work for Verizon offer creation, validation, migration, API integrations, and production support.
+            </p>
             <ul class="card-text">
-              <li>
-                Used 1.6M tweet dataset; preprocessed with tokenization, stop
-                word removal, and lemmatization.
-              </li>
-              <li>
-                Built models including Logistic Regression, SVM, Naive Bayes,
-                and LSTM.
-              </li>
-              <li>
-                Created a live prediction interface combining ML models and
-                LLMs.
-              </li>
+              <li>Owned Publish Module workflows for offer lifecycle operations in Pega Decisioning Hub.</li>
+              <li>Built REST integrations between ReactJS UI and Pega backend services.</li>
+              <li>Improved debugging with Kibana-based unified logging for OOTB and custom APIs.</li>
             </ul>
-            <a
-              href="https://github.com/AmiRaGaL/Twitter-Sentiment-Analysis.git"
-              target="_blank"
-              class="btn btn-secondary mt-3"
-              >View on GitHub</a
-            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Industry Days - Manning School of Business</h5>
+            <p class="card-text">
+              Web and data operations work for UMass Lowell's Industry Days event, combining content operations, automation, and analytics.
+            </p>
+            <ul class="card-text">
+              <li>Created web content using Tridion SDL aligned with university branding.</li>
+              <li>Automated dashboards with Tableau Prep and Google Sheets for post-event insights.</li>
+              <li>Used Selenium to collect speaker data and analyze Suitable App registration activity.</li>
+            </ul>
+            <a href="https://www.uml.edu/msb/industry-days/" target="_blank" rel="noreferrer" class="btn btn-primary mt-3">Visit Event Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">AI-Integrated Discord Bot</h5>
+            <p class="card-text">
+              Custom Discord assistant with conversational support, role assignment, contextual responses, and LLM-powered interactions.
+            </p>
+            <ul class="card-text">
+              <li>Built using Node.js and Python with instruction fine-tuning and RAG techniques.</li>
+              <li>Integrated Groq API for fast LLM-powered chat workflows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Twitter Sentiment Analysis</h5>
+            <p class="card-text">
+              Academic NLP project for sentiment classification using a large tweet dataset, classical ML baselines, and neural models.
+            </p>
+            <ul class="card-text">
+              <li>Processed a 1.6M tweet dataset with tokenization, stop-word removal, and lemmatization.</li>
+              <li>Built Logistic Regression, SVM, Naive Bayes, and LSTM models.</li>
+              <li>Created a live prediction interface combining ML models and LLMs.</li>
+            </ul>
+            <a href="https://github.com/AmiRaGaL/Twitter-Sentiment-Analysis.git" target="_blank" rel="noreferrer" class="btn btn-secondary mt-3">GitHub</a>
           </div>
         </div>
       </div>
