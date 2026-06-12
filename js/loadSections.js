@@ -1,6 +1,7 @@
 // js/loadSections.js
 const sections = {
   home: "sections/home.html",
+  featured: "sections/featured.html",
   about: "sections/about.html",
   skills: "sections/skills.html",
   experience: "sections/experience.html",
@@ -33,8 +34,7 @@ function loadSections() {
         // Notify listeners (e.g., to lazy-init chat)
         document.dispatchEvent(new CustomEvent("section:loaded", { detail: { id } }));
 
-        // Refresh AOS so newly injected nodes animate
-        if (window.AOS?.refresh) AOS.refresh();
+        if (window.AOS?.refreshHard && document.body) AOS.refreshHard();
       })
       .catch((err) => console.error(`Error loading ${id}:`, err));
   }

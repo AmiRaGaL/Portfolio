@@ -103,7 +103,6 @@ function handleSubmit(e, root) {
 
   askResumeAI(prompt, (t) => (output.textContent += t), effectiveModel)
     .then(() => {
-      // ✅ Save logs with correct field names
       fetch("/api/save-log", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -153,7 +152,6 @@ function bindChatOnce(root = document) {
     );
   }
 
-  // ✨ Ctrl/Cmd + Enter shortcut
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) {
       e.preventDefault();
@@ -199,11 +197,18 @@ function initTheme() {
   );
   const tgl = document.getElementById("theme-toggle");
   if (tgl) {
+    const syncLabel = () => {
+      tgl.textContent = document.body.classList.contains("dark-theme")
+        ? "Light"
+        : "Dark";
+    };
+    syncLabel();
     tgl.addEventListener("click", () => {
       const next = !document.body.classList.contains("dark-theme");
       document.body.classList.toggle("dark-theme", next);
       document.documentElement.style.colorScheme = next ? "dark" : "light";
       localStorage.setItem("theme", next ? "dark" : "light");
+      syncLabel();
     });
   }
   const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
@@ -214,6 +219,7 @@ function initTheme() {
 }
 
 /* ---------- Scroll-to-top arrow ---------- */
+let scrollArrowReady = false;
 function ensureScrollArrow() {
   let btn = document.getElementById("scroll-arrow");
   if (!btn) {
@@ -221,24 +227,34 @@ function ensureScrollArrow() {
     btn.id = "scroll-arrow";
     btn.type = "button";
     btn.setAttribute("aria-label", "Back to start");
-    btn.innerHTML = "↑";
+    btn.textContent = "Top";
     document.body.appendChild(btn);
   }
-  const target = document.querySelector(
-    "#home, .section.home, section.section:first-of-type",
-  );
+
+  if (scrollArrowReady) return;
+  scrollArrowReady = true;
+
   btn.addEventListener("click", () => {
+    const target = document.querySelector(
+      "#home, .section.home, section.section:first-of-type",
+    );
     const top = target
       ? target.getBoundingClientRect().top + window.scrollY
       : 0;
     window.scrollTo({ top, behavior: "smooth" });
   });
 
-  // UPDATED: Now toggles 'scroll-active' class on body for chat widget positioning
   const onScroll = () => {
     const shouldShow = window.scrollY > 240;
     btn.classList.toggle("show", shouldShow);
     document.body.classList.toggle("scroll-active", shouldShow);
+
+    const progress = document.getElementById("progress-bar");
+    if (progress) {
+      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = scrollable > 0 ? Math.min(100, (window.scrollY / scrollable) * 100) : 0;
+      progress.style.width = `${pct}%`;
+    }
   };
 
   onScroll();
@@ -261,7 +277,6 @@ function initFloatingChatWidget() {
     chatPanel.setAttribute("aria-hidden", "true");
   };
 
-  // show a tiny badge after 3s if chat is still closed
   const badge = document.getElementById("chatBadge");
   setTimeout(() => {
     if (!badge) return;
@@ -269,7 +284,6 @@ function initFloatingChatWidget() {
     if (!isOpen) badge.style.display = "block";
   }, 3000);
 
-  // Hide badge once user opens chat
   chatButton.addEventListener("click", () => {
     if (badge) badge.style.display = "none";
   });
