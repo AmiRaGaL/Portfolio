@@ -44,7 +44,7 @@
       "title": "Full-Stack Software Engineer",
       "company": "OurFreedom.ai",
       "location": "Remote (New York)",
-      "duration": "Jan 2025 – Present",
+      "duration": "Jan 2026 – Present",
       "key_achievements": [
         "Architected complete social graph system (follow/block/private profiles) using NestJS, MongoDB, TypeScript",
         "Reduced profile loading time by 60% through optimized data fetching and response structure",
@@ -739,7 +739,7 @@
     },
     {
       "q": "Current role responsibilities?",
-      "a": "OurFreedom.ai (Jan 2025–Present): full‑stack social features, voice SDK, content moderation. Data Science Intern at Manning School (Oct 2025–Present): LinkedIn/enrollment analytics, Tableau dashboards."
+      "a": "OurFreedom.ai (Jan 2026–Present): full‑stack social features, voice SDK, content moderation. Data Science Intern at Manning School (Oct 2025–Present): LinkedIn/enrollment analytics, Tableau dashboards."
     },
     {
       "q": "Sprint and delivery cadence?",
