@@ -1,14 +1,12 @@
-# Deva Sai Kumar Bheesetti Portfolio
+# Deva Sai Kumar Bheesetti · Portfolio
 
-Modern professional software engineering portfolio for Deva Sai Kumar Bheesetti, focused on backend APIs, full-stack product development, React Native apps, cloud deployments, and applied AI/RAG systems.
+Source for my personal portfolio site, covering backend APIs, full-stack and React Native product work, cloud deployments, and applied AI/RAG systems.
 
-Live site: https://portfolio-deva-sai.vercel.app/
+**Live site:** [portfolio-deva-sai.vercel.app](https://portfolio-deva-sai.vercel.app/)
 
 ## Overview
 
-This repository contains a static portfolio website designed for recruiters, hiring managers, and engineering teams evaluating Deva's production engineering experience. The redesigned site keeps the lightweight section-loader architecture while presenting the work as a polished modern portfolio instead of a basic one-page Bootstrap scroll.
-
-The portfolio emphasizes backend ownership, product judgment, cloud delivery, mobile/full-stack range, AI/RAG evaluation, and enterprise engineering experience.
+A lightweight static site: `index.html` loads each section from `sections/*.html`, and a resume-aware AI chat assistant is served from the `api/` routes. It is aimed at recruiters and engineering teams who want a quick read on my production experience, projects and skills.
 
 ## Featured Work
 
@@ -33,16 +31,14 @@ Additional gallery items cover healthcare NLP research, production social-platfo
 - **Featured Work**: Three strongest project cards with technology chips, live links, GitHub links, and proof statements
 - **About**: Concise professional summary with current focus, education, AI depth, and enterprise background
 - **Skills**: Grouped panels for backend, frontend/mobile, cloud/devops, databases, AI/RAG, data automation, and enterprise/Pega
-- **Experience**: Polished timeline highlighting current production engineering work at OurFreedom.ai
+- **Experience**: Timeline led by current work as a Full-Stack Software Engineer at OurFreedom.ai (Jan 2026 – Present)
 - **Projects**: Clean gallery ordered by hiring signal with category labels and concise summaries
 - **Chat**: Resume-aware AI assistant for role-fit and experience questions
 - **Contact**: Direct links and contact form
 
-## Design Direction
+## Design
 
-The redesign uses a premium warm chocolate, brown, gold, and cream identity. It replaces generic Bootstrap blue accents with custom buttons, chips, borders, typography, section rhythm, and responsive cards intended to feel recruiter-friendly and software-engineer professional.
-
-The goal is conversion-oriented: quickly establish credibility, surface the strongest recent GitHub projects, then support deeper review through experience, skills, chat, and contact paths.
+A warm chocolate, brown, gold and cream palette with custom buttons, chips and responsive cards. The page leads with credibility and the strongest recent projects, then supports deeper review through experience, skills, chat and contact.
 
 ## Local Development
 
@@ -52,38 +48,14 @@ Because the site dynamically fetches section HTML files, serve it with a local s
 python3 -m http.server 3000
 ```
 
-Then open:
-
-```text
-http://localhost:3000
-```
+Then open http://localhost:3000.
 
 ## Deployment
 
 The portfolio is deployed on Vercel. Static assets, section files, API routes, and the AI chat widget are served from this repository's deployed project.
 
-## Branch and PR Notes
-
-Portfolio changes should be made through feature branches and reviewed through pull requests.
-
-Recommended PR title:
-
-```text
-Modernize portfolio design and recruiter-focused project showcase
-```
-
-Recommended PR body highlights:
-
-- Modernized visual design using the chocolate/brown theme
-- Added featured project showcase
-- Reordered site sections for recruiter conversion
-- Added recent GitHub projects
-- Updated README
-- Improved SEO, hero, about, skills, experience, and projects
-- Preserved static architecture and AI chat widget
-
 ## Contact
 
-- Portfolio: https://portfolio-deva-sai.vercel.app/
-- GitHub: https://github.com/AmiRaGaL
-- LinkedIn: https://www.linkedin.com/in/deva-sai-kumar-bheesetti-34380812b
+- Portfolio: [portfolio-deva-sai.vercel.app](https://portfolio-deva-sai.vercel.app/)
+- GitHub: [@AmiRaGaL](https://github.com/AmiRaGaL)
+- LinkedIn: [Deva Sai Kumar Bheesetti](https://www.linkedin.com/in/deva-sai-kumar-bheesetti-34380812b)
